@@ -5,43 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/mananciais.png" type="imagens">
     <title>Contagem do Salão</title>
-    <style>
-
-    main {
-        text-align: center;
-        
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <main>
-        <h1>Presença na Sala de Oração</h1>
-        <p>
-            <label for="idata">Dia de Hoje</label>
-            <input type="date" name="data" id="idata">
-        </p>
-        <p>
-            <label for="iadulto">Adultos</label>
-            <input type="number" name="adulto" id="iadulto">
-        </p>
-        <p>
-            <label for="icrianca">Crianças</label>
-            <input type="number" name="crianca" id="icrianca"
-        
-            oninput="isoma.innerHTML = Number(iadulto.value) + Number(icrianca.value)">
-            <p>
-                <label for="isoma">Soma:</label>
-                <output name="soma" id="isoma">0</output>
-            </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        <section id="login">
+
+
+            <div id="formulario">
+                <h1>Presença na Sala de Oração</h1>
+                <p>
+                    <label for="idata">Dia de Hoje</label>
+                    <input type="date" name="data" id="idata">
+                </p>
+                <p>
+                    <label for="iadulto">Adultos</label>
+                    <input type="number" name="adulto" id="iadulto">
+                </p>
+                <p>
+                    <label for="icrianca">Crianças</label>
+                    <input type="number" name="crianca" id="icrianca"
+                
+                    oninput="isoma.innerHTML = Number(iadulto.value) + Number(icrianca.value)">
+                    <p>
+                        <label for="isoma">Soma:</label>
+                        <output name="soma" id="isoma">0</output>
+                    </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </div>
+        </section>
+ 
     </main>
-
-
-
-
 </body>
 </html>

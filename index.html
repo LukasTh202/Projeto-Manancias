@@ -12,27 +12,44 @@
     <main>
         <section id="login">
 
+            <div id="img">
+                <img src="imagens/mananciais 1.0.png" alt="logo.mananciais">
+            </div>
+
 
             <div id="formulario">
                 <h1>Presença na Sala de Oração</h1>
+
                 <p>
-                    <label for="idata">Dia de Hoje</label>
+                    <label for="ilocal">Local </label>
+                    <input type="text" name="local" id="ilocal" list="lstlocal" placeholder="Local da Sala">
+                    <datalist id="lstlocal">
+                        <option value="Duque de Caxias"></option>
+                        <option value="Barra da Tijuca"></option>
+                    </datalist>
+
+
+                </p>
+
+
+                <p>
+                    <label for="idata">Data:</label>
                     <input type="date" name="data" id="idata">
                 </p>
                 <p>
                     <label for="iadulto">Adultos</label>
-                    <input type="number" name="adulto" id="iadulto">
+                    <input type="number" name="adulto" id="iadulto" placeholder="Quantidade de Adultos">
                 </p>
                 <p>
                     <label for="icrianca">Crianças</label>
-                    <input type="number" name="crianca" id="icrianca"
+                    <input type="number" name="crianca" id="icrianca" placeholder="Quantidade de Crianças"
                 
                     oninput="isoma.innerHTML = Number(iadulto.value) + Number(icrianca.value)">
                     <p>
                         <label for="isoma">Soma:</label>
                         <output name="soma" id="isoma">0</output>
                     </p>
-                <p>
+                    <p>
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Limpar">
                 </p>
